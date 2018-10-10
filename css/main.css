@@ -1,0 +1,172 @@
+html {
+  font-family: 'Josefin Sans', sans-serif;
+}
+
+/* Media queries for navigation */
+@media only screen and (min-width: 20em) {
+
+  .nav {
+    text-align: center;
+  }
+
+}
+
+@media only screen and (min-width: 36em) {
+
+  .nav {
+    text-align: right;
+  }
+
+}
+
+/* Image 1 */
+.gallery-1 a .text-1 {
+  display: none;
+  top: 3em;
+}
+
+.gallery-1:hover {
+  opacity: .5;
+}
+
+.gallery-1:hover a .text-1 {
+  display: inline-block;
+  position: absolute;
+  left: 2em;
+  top: 10em;
+  text-align: center;
+  color: #000;
+}
+
+/* Image 2 */
+.gallery-2 a .text-2 {
+  display: none;
+  top: 3em;
+}
+
+.gallery-2:hover {
+  opacity: .5;
+}
+
+.gallery-2:hover a .text-2 {
+  display: inline-block;
+  position: absolute;
+  left: 3em;
+  top: 10em;
+  text-align: center;
+  color: #000;
+}
+
+/* Image 3 */
+.gallery-3 a .text-3 {
+  display: none;
+  top: 3em;
+}
+
+.gallery-3:hover {
+  opacity: .5;
+}
+
+.gallery-3:hover a .text-3 {
+  display: inline-block;
+  position: absolute;
+  left: 4em;
+  top: 10em;
+  text-align: center;
+  color: #000;
+}
+
+/* Image 4 */
+.gallery-4 a .text-4 {
+  display: none;
+  top: 3em;
+}
+
+.gallery-4:hover {
+  opacity: .5;
+}
+
+.gallery-4:hover a .text-4 {
+  display: inline-block;
+  position: absolute;
+  left: 3em;
+  top: 10em;
+  text-align: center;
+  color: #000;
+}
+
+/* Image 5 */
+.gallery-5 a .text-5 {
+  display: none;
+  top: 3em;
+}
+
+.gallery-5:hover {
+  opacity: .5;
+}
+
+.gallery-5:hover a .text-5 {
+  display: inline-block;
+  position: absolute;
+  left: 4em;
+  top: 10em;
+  text-align: center;
+  color: #000;
+}
+
+/* Image 6 */
+.gallery-6 a .text-6 {
+  display: none;
+  top: 3em;
+}
+
+.gallery-6:hover {
+  opacity: .5;
+}
+
+.gallery-6:hover a .text-6 {
+  display: inline-block;
+  position: absolute;
+  left: 3em;
+  top: 10em;
+  text-align: center;
+  color: #000;
+}
+
+/* Image 7 */
+.gallery-7 a .text-7 {
+  display: none;
+  top: 3em;
+}
+
+.gallery-7:hover {
+  opacity: .5;
+}
+
+.gallery-7:hover a .text-7 {
+  display: inline-block;
+  position: absolute;
+  left: 4em;
+  top: 10em;
+  text-align: center;
+  color: #000;
+}
+
+/* Image 8 */
+.gallery-8 a .text-8 {
+  display: none;
+  top: 3em;
+}
+
+.gallery-8:hover {
+  opacity: .5;
+}
+
+.gallery-8:hover a .text-8 {
+  display: inline-block;
+  position: absolute;
+  left: 3em;
+  top: 10em;
+  text-align: center;
+  color: #000;
+}

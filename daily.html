@@ -1,33 +1,6 @@
-<!DOCTYPE html>
-<html lang="en-ca">
-<head>
-  <meta charset="utf-8">
-  <title>Focus</title>
-  <meta name="viewport" content="width=device-width,initial-scale=1">
-  <link href="css/module.css" rel="stylesheet">
-  <link href="css/grid.css" rel="stylesheet">
-  <link href="css/type.css" rel="stylesheet">
-  <link href="css/main.css" rel="stylesheet">
-</head>
-<body>
-  <header>
-    <div class="grid island">
-      <div class="logo unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-        <img class="img-flex logo" src="images/logo.png" alt="logo">
-      </div>
-      <nav class="nav unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-        <ul class="list-group-inline pad-top">
-          <li class="list-group-item gutter">
-            <a href="#about-me">About</a>
-          </li>
-          <li class="list-group-item gutter">
-            <a href="#">Work</a>
-          </li>
-        </ul>
-
-      </nav>
-    </div>
-  </header>
+---
+layout: default
+---
 
   <main>
       <h1 class="text-center pad-top">Daily Dose Branding</h1>
@@ -36,89 +9,31 @@
   </div>
   <section class="photos">
     <div class="grid">
-      <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-        <div class="embed embed-3by2">
-          <img class="focus embed-item island-1-2" src="images/box.png" alt="focus">
-        </div>
-      </div>
+      {% include subpage.html unitsizem="m-1-2" unitsizel="l-1-2" unitsizexl="xl-1-2" embedsize=
+      "embed-3by2" url="/images/box.png" %}
       <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
         <div class="grid">
-          <div class="unit xs-1 s-1 m-1 l-1">
-            <div class="embed embed-3by1 push-1-8">
-              <img class="focus embed-item island-1-2" src="images/box.png" alt="focus">
-            </div>
+          {% include subpage.html unitsizem="m-1" unitsizel="l-1" unitsizexl="xl-1" embedsize=
+          "embed-3by1" url="/images/box.png" %}
           </div>
-          <div class="unit xs-1 s-1 m-1 l-1">
-            <div class="embed embed-3by1 push-1-8">
-              <img class="focus embed-item  island-1-2" src="images/box.png" alt="focus">
-            </div>
-          </div>
+          {% include subpage.html unitsizem="m-1" unitsizel="l-1" unitsizexl="xl-1" embedsize=
+          "embed-3by1" url="/images/box.png" %}
         </div>
-      </div>
-      <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-        <div class="embed embed-3by2">
-          <img class="focus embed-item island-1-2" src="images/box.png" alt="focus">
-        </div>
-      </div>
+      {% include subpage.html unitsizem="m-1-2" unitsizel="l-1-2" unitsizexl="xl-1-2" embedsize=
+      "embed-3by2" url="/images/box.png" %}
+
       <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
         <div class="grid">
-          <div class="unit xs-1 s-1 m-1-2 l-1-2">
-            <div class="embed embed-3by2 push-1-8">
-              <img class="focus embed-item island-1-2" src="images/box.png" alt="focus">
-            </div>
-          </div>
-          <div class="unit xs-1 s-1 m-1-2 l-1-2">
-            <div class="embed embed-3by2 push-1-8">
-              <img class="focus embed-item  island-1-2" src="images/box.png" alt="focus">
-            </div>
-          </div>
-          <div class="unit xs-1 s-1 m-1-2 l-1-2">
-            <div class="embed embed-3by2 push-1-8">
-              <img class="focus embed-item island-1-2" src="images/box.png" alt="focus">
-            </div>
-          </div>
-          <div class="unit xs-1 s-1 m-1-2 l-1-2">
-            <div class="embed embed-3by2 push-1-8">
-              <img class="focus embed-item  island-1-2" src="images/box.png" alt="focus">
-            </div>
-          </div>
+          {% include subpage.html unitsizem="m-1-2" unitsizel="l-1-2" unitsizexl="xl-1-2" embedsize=
+          "embed-3by2" url="/images/box.png" %}
+          {% include subpage.html unitsizem="m-1-2" unitsizel="l-1-2" unitsizexl="xl-1-2" embedsize=
+          "embed-3by2" url="/images/box.png" %}
+          {% include subpage.html unitsizem="m-1-2" unitsizel="l-1-2" unitsizexl="xl-1-2" embedsize=
+          "embed-3by2" url="/images/box.png" %}
+          {% include subpage.html unitsizem="m-1-2" unitsizel="l-1-2" unitsizexl="xl-1-2" embedsize=
+          "embed-3by2" url="/images/box.png" %}
         </div>
       </div>
+    </div>
   </section>
 </main>
-<footer>
-  <div class="footer-icons island-1-2">
-    <ul class="list-group-inline">
-        <li class="list-group-item">
-          <i class="icon i-18">
-          <a href="#">
-            <img class="social" src="images/mail.png" alt="socials">
-          </a>
-        </i>
-        </li>
-        <li class="list-group-item">
-          <i class="icon i-18">
-          <a href="#">
-            <img class="social" src="images/face.png" alt="socials">
-          </a>
-        </i>
-        </li>
-        <li class="list-group-item">
-          <i class="icon i-18">
-          <a href="#">
-            <img class="social" src="images/insta.png" alt="socials">
-          </a>
-        </i>
-        </li>
-        <li class="list-group-item">
-          <i class="icon i-18">
-          <a href="#">
-            <img class="social" src="images/twitter.png" alt="socials">
-          </a>
-        </i>
-        </li>
-  </ul>
-  </div>
-</footer>
-</body>
-</html>

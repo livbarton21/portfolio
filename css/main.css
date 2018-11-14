@@ -1,5 +1,27 @@
 html {
-  font-family: 'Josefin Sans', sans-serif;
+  font-family: 'Oswald', sans-serif;
+  color: #020202;
+}
+
+h1 {
+  font-family: 'Oswald', sans-serif;
+}
+
+nav a {
+  font-family: 'Oswald', sans-serif;
+  color: #adadad;
+}
+
+nav a:hover {
+  color: #000000;
+}
+
+.bg-image {
+  background-image: url("../images/banner.png");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 78vh;
 }
 
 /* Media queries for navigation */
@@ -38,14 +60,14 @@ html {
   top: 3em;
 }
 
-.gallery-1:hover {
+.gallery-1:hover img {
   opacity: .5;
 }
 
 .gallery-1:hover a .text-1 {
   display: inline-block;
   position: absolute;
-  left: 2em;
+  left: 1.5em;
   top: 10em;
   text-align: center;
   color: #000;
@@ -57,14 +79,14 @@ html {
   top: 3em;
 }
 
-.gallery-2:hover {
+.gallery-2:hover img {
   opacity: .5;
 }
 
 .gallery-2:hover a .text-2 {
   display: inline-block;
   position: absolute;
-  left: 3em;
+  left: 1.5em;
   top: 10em;
   text-align: center;
   color: #000;
@@ -76,14 +98,14 @@ html {
   top: 3em;
 }
 
-.gallery-3:hover {
+.gallery-3:hover img {
   opacity: .5;
 }
 
 .gallery-3:hover a .text-3 {
   display: inline-block;
   position: absolute;
-  left: 4em;
+  left: 1.5em;
   top: 10em;
   text-align: center;
   color: #000;
@@ -95,91 +117,40 @@ html {
   top: 3em;
 }
 
-.gallery-4:hover {
+.gallery-4:hover img {
   opacity: .5;
 }
 
 .gallery-4:hover a .text-4 {
   display: inline-block;
   position: absolute;
-  left: 3em;
+  left: 1.5em;
   top: 10em;
   text-align: center;
   color: #000;
 }
 
-/* Image 5 */
-.gallery-5 a .text-5 {
-  display: none;
-  top: 3em;
+.grey {
+  background-color: #ddd8d8;
 }
 
-.gallery-5:hover {
-  opacity: .5;
+.btn {
+  font-family: 'Oswald', sans-serif;
+  background-color: #ddd8d8;
+  border: 0;
 }
 
-.gallery-5:hover a .text-5 {
-  display: inline-block;
-  position: absolute;
-  left: 4em;
-  top: 10em;
-  text-align: center;
+.btn a {
   color: #000;
+  text-decoration: none;
 }
 
-/* Image 6 */
-.gallery-6 a .text-6 {
-  display: none;
-  top: 3em;
+.btn:hover {
+  background-color: #ddd8d8;
+  border: 0;
 }
 
-.gallery-6:hover {
-  opacity: .5;
-}
-
-.gallery-6:hover a .text-6 {
-  display: inline-block;
-  position: absolute;
-  left: 3em;
-  top: 10em;
-  text-align: center;
-  color: #000;
-}
-
-/* Image 7 */
-.gallery-7 a .text-7 {
-  display: none;
-  top: 3em;
-}
-
-.gallery-7:hover {
-  opacity: .5;
-}
-
-.gallery-7:hover a .text-7 {
-  display: inline-block;
-  position: absolute;
-  left: 4em;
-  top: 10em;
-  text-align: center;
-  color: #000;
-}
-
-/* Image 8 */
-.gallery-8 a .text-8 {
-  display: none;
-  top: 3em;
-}
-
-.gallery-8:hover {
-  opacity: .5;
-}
-
-.gallery-8:hover a .text-8 {
-  display: inline-block;
-  position: absolute;
-  left: 3em;
-  top: 10em;
-  text-align: center;
-  color: #000;
+.btn:hover a {
+  color: #fff;
+  text-decoration: none;
 }

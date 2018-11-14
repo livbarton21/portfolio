@@ -1,0 +1,8 @@
+# www.robotstxt.org
+
+Sitemap: http://olivialynndesign.ca/sitemap.xml
+
+User-Agent: *
+Disallow:
+
+% If you want the search engine to ignore something on your website %

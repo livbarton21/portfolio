@@ -2,25 +2,30 @@
 <html lang="en-ca">
 <head>
   <meta charset="utf-8">
-  <title>Wireframe</title>
+  <title>{{page.title}}</title>
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="description" content="{{page.meta}}">
   <link href="{{site.baseurl}}/css/module.css" rel="stylesheet">
   <link href="{{site.baseurl}}/css/grid.css" rel="stylesheet">
   <link href="{{site.baseurl}}/css/type.css" rel="stylesheet">
   <link href="{{site.baseurl}}/css/main.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Dosis" rel="stylesheet">
 </head>
-<header>
+<header itemscope itemtype="https://schema.org/WPHeader">
   <div class="grid island">
     <div class="logo unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
-      <img class="img-flex logo" src="{{site.baseurl}}/images/logo.png" alt="logo">
+      <a itemscope itemtype="https://schema.org/Brand" href="{{site.baseurl}}/index">
+        <img itemprop="logo" class="img-flex logo" src="{{site.baseurl}}/images/logo.png" alt="logo">
+      </a>
+
     </div>
-    <nav class="nav unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
+    <nav itemscope itemtype="https://schema.org/SiteNavigationElement" class="nav unit xs-1 s-1 m-1-2 l-1-2 xl-1-2">
       <ul class="list-group-inline pad-top">
         <li class="list-group-item gutter">
-          <a href="{{site.baseurl}}/index#about/">About</a>
+          <a itemprop="url" href="{{site.baseurl}}/index#about">About</a>
         </li>
         <li class="list-group-item gutter">
-          <a href="{{site.baseurl}}/index#gallery/">Work</a>
+          <a itemprop="url" href="{{site.baseurl}}/index#gallery">Work</a>
         </li>
       </ul>
 
@@ -32,39 +37,47 @@
   {{content}}
 </main>
 
-<footer>
-  <div class="footer-icons island-1-2">
-    <ul class="list-group-inline">
-        <li class="list-group-item">
-          <i class="icon i-18">
-          <a href="#">
-            <img class="social" src="{{site.baseurl}}/images/mail.png" alt="socials">
-          </a>
-        </i>
-        </li>
-        <li class="list-group-item">
-          <i class="icon i-18">
-          <a href="#">
-            <img class="social" src="{{site.baseurl}}/images/face.png" alt="socials">
-          </a>
-        </i>
-        </li>
-        <li class="list-group-item">
-          <i class="icon i-18">
-          <a href="#">
-            <img class="social" src="{{site.baseurl}}/images/insta.png" alt="socials">
-          </a>
-        </i>
-        </li>
-        <li class="list-group-item">
-          <i class="icon i-18">
-          <a href="#">
-            <img class="social" src="{{site.baseurl}}/images/twitter.png" alt="socials">
-          </a>
-        </i>
-        </li>
-  </ul>
+<footer itemscope itemtype="https://schema.org/WPFooter" class="grey">
+  <div class="grid">
+    <div class="unit xs-1 s-1 m-1-2 l-1-2 gutter pad-t-1-2">
+      <p itemprop="name" class="pico"><small>©OliviaLynnBarton</small></p>
+    </div>
+    <div class="unit xs-1 s-1 m-1-2 l-1-2 gutter pad-t-1-2">
+      <div class="footer-icons right">
+        <ul class="list-group-inline">
+          <li class="list-group-item">
+            <i class="icon i-18">
+              <a rel="me" itemprop="url" href="mailto:olivialynnbarton@outlook.com">
+                <img itemprop="icon" class="social" src="{{site.baseurl}}/images/mail.png" alt="socials">
+              </a>
+            </i>
+          </li>
+          <li class="list-group-item">
+            <i class="icon i-18">
+              <a rel="me" itemprop="url" href="https://www.facebook.com/olivia.barton.779">
+                <img itemprop="icon" class="social" src="{{site.baseurl}}/images/face.png" alt="socials">
+              </a>
+            </i>
+          </li>
+          <li class="list-group-item">
+            <i class="icon i-18">
+              <a rel="me" itemprop="url" href="https://www.instagram.com/olivialynnbarton/">
+                <img itemprop="icon" class="social" src="{{site.baseurl}}/images/insta.png" alt="socials">
+              </a>
+            </i>
+          </li>
+          <li class="list-group-item">
+            <i class="icon i-18">
+              <a rel="me" itemprop="url" href="#">
+                <img itemprop="icon" class="social" src="{{site.baseurl}}/images/twitter.png" alt="socials">
+              </a>
+            </i>
+          </li>
+        </ul>
+      </div>
+    </div>
   </div>
+
 </footer>
 
 </html>

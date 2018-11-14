@@ -1,5 +1,29 @@
-<div class="unit xs-1 s-1 {{include.unitsizem}} {{include.unitsizel}} {{include.unitsizexl}}">
-  <div class="embed {{include.embedsize}}">
-    <img class="focus embed-item island-1-2" src="{{include.url}}" alt="focus">
+<h1 itemprop="heading" class="text-center pad-top">{{page.heading}}</h1>
+<p itemprop="subheading" class="text-center max-length">{{page.subHeading}}</p>
+
+<div class="grid">
+  <div class="unit x-1 s-1 m-1-2 l-1-2 island">
+    <div itemscope itemtype="http://schema.org/ImageObject" class="gutter embed embed-2by3">
+      <img itemprop="image" class="embed-item img-flex" src="{{page.img-1}}" alt="">
+    </div>
   </div>
+
+  <div class="unit x-1 s-1 m-1-2 l-1-2 island">
+    <div itemscope itemtype="http://schema.org/ImageObject" class="gutter embed embed-2by3">
+      <img itemprop="image" class="embed-item img-flex" src="{{page.img-2}}" alt="">
+    </div>
+  </div>
+
+  <div class="unit x-1 s-1 m-1-2 l-1-2 island">
+    <div itemscope itemtype="http://schema.org/ImageObject" class="gutter embed embed-2by3">
+      <img itemprop="image" class="embed-item img-flex" src="{{page.img-3}}" alt="">
+    </div>
+  </div>
+
+  <div class="unit x-1 s-1 m-1-2 l-1-2 island">
+    <div itemscope itemtype="http://schema.org/ImageObject" class="gutter embed embed-2by3">
+      <img itemprop="image" class="embed-item img-flex" src="{{page.img-4}}" alt="">
+    </div>
+  </div>
+
 </div>

@@ -1,40 +1,44 @@
 ---
 layout: default
+title: Portfolio
+meta: This is Olivia Barton's Portfolio Website
 ---
 
 <body>
+  <div class="gutter-1-2 pad-b-2">
+    <div class="gutter-2 pad-t-2 pad-b-2 bg-image">
+      <div class="pad-t-2">
+        <div class="pad-t-2 pad-b-2">
+          <h1 class="text-center pad-t-2 pad-b-2">A beautiful design without a great idea won’t be remembered, <br>and a great idea without a beautiful design won’t be noticed</h1>
+        </div>
+      </div>
+    </div>
+  </div>
   <section id="gallery" class="push">
     <div class="grid">
-      {% include grid.html class="gallery-1" textclass="text-1" url="/images/box.png" text="No.1 Branding" %}
-      {% include grid.html class="gallery-2" textclass="text-2" url="/images/box.png" text="No.2 Branding" %}
-      {% include grid.html class="gallery-3" textclass="text-3" url="/images/box.png" text="No.3 Branding" %}
-      {% include grid.html class="gallery-4" textclass="text-4" url="/images/box.png" text="No.4 Branding" %}
-      {% include grid.html class="gallery-5" textclass="text-5" url="/images/box.png" text="No.5 Branding" %}
-      {% include grid.html class="gallery-6" textclass="text-6" url="/images/box.png" text="No.6 Branding" %}
-      {% include grid.html class="gallery-7" textclass="text-7" url="/images/box.png" text="No.7 Branding" %}
-      {% include grid.html class="gallery-8" textclass="text-8" url="/images/box.png" text="No.8 Branding" %}
+      {% for portfolio in site.data.homepage %}
+      {% include grid.html data=portfolio %}
+      {% endfor %}
     </div>
   </section>
-  <section id="about">
-    <div class="grid">
+  <section itemscope itemtype="http://schema.org/Person"id="about">
+    <div class="grid push-1-2">
       <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 gutter-1-2">
         <div class="embed embed-1by1">
-        <img class="embed-item profile" src="images/profile.jpg" alt="profile">
+        <img itemprop="headshot" class="embed-item profile" src="images/profile.jpg" alt="profile">
       </div>
       </div>
       <div class="unit xs-1 s-1 m-1-2 l-1-2 xl-1-2 gutter-1-2">
-        <h2>Hey, I'm Liv!</h2>
-        <p>I have always been a creative person and definitely found my happy place when I began studying graphic design. One of my favourite quotes reads, "a beautiful design without a great idea won't be remembered, and a great idea without a beautiful design won't be noticed." I love seeing how a beautiful design can really elevate a concept and bring it to the next level. I specialize in branding, photography, and content creation.
+        <h2 itemprop="introduction" class="push-1-2">Hey, I'm Liv!</h2>
+        <p itemprop="description" class="milli">I have always been a creative person and definitely found my happy place when I began studying graphic design. I love seeing how a beautiful design can really elevate a concept and bring it to the next level. I specialize in branding, photography, and content creation.
         </p>
-        <h2>Why Me?</h2>
-        <p class="push-1-2">There are a lot of graphic designers out there so here are a few things that make me different!
-        <ul class="list-group">
-          <li class="list-group-item">- I am extremely detail oriented and will not leave a single stone unturned when it comes to my work.</li>
-          <li class="list-group-item">- I love learning new things and am always keen to expand my skillset</li>
-          <li class="list-group-item">- I have a bernese mountain dog named Camper and he would love to meet you</li>
-          <li class="list-group-item">- I absolutely love what I do and can't wait for new projects to come across my desk</li>
-      </ul>
+        <p></p>
+        <p> </p>
+      <div class="btn">
+        <a class="micro" href="mailto:olivialynnbarton@outlook.com">Let's get in touch</a>
       </div>
+      </div>
+
     </div>
   </section>
 </body>

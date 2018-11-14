@@ -1,6 +1,11 @@
-<div class="unit xs-1 s-1 m-1-2 l-1-4 island-1-4 {{include.class}}">
-  <a href="{{site.baseurl}}/daily/">
-    <img class="img-flex" src="{{include.url}}" alt="gallery">
-    <p class="giga bold {{include.textclass}}">{{include.text}}</p>
+<div class="unit xs-1 s-1 m-1-2 l-1-4 island-1-4 {{include.data.class}}">
+  <a itemscope itemtype="http://schema.org/image" href="{{site.baseurl}}/daily/">
+    <div itemscope itemtype="http://schema.org/ImageObject" class="embed embed-1by1">
+      <img itemprop="image" class="embed-item" src="{{include.data.url}}" alt="gallery">
+    </div>
+    <div class="{{include.data.textClass}}">
+      <h3 itemprop="number" class="giga text-left push-1-4">{{include.data.number}}</h4>
+      <h4 itemprop="heading" class="mega">{{include.data.heading}}</h4>
+    </div>
   </a>
 </div>

@@ -4,19 +4,19 @@
   number: 01
   heading: Daily Dose Branding
   pageUrl: daily
-- image: ../images/pictwo.jpg
+- image: /images/pictwo.jpg
   textClass: text-2
   class: gallery-2
   number: 02
   heading: Newfoundland Pub Branding
   pageUrl: newf
-- image: ../images/picthree.jpg
+- image: /images/picthree.jpg
   textClass: text-3
   class: gallery-3
   number: 03
   heading: Tote Illustrations
   pageUrl: bag
-- image: ../images/pfour.jpg
+- image: /images/pfour.jpg
   textClass: text-4
   class: gallery-4
   number: 04

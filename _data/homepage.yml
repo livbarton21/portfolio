@@ -1,4 +1,4 @@
-- image: ../images/picone.jpg
+- image: "../images/picone.jpg"
   textClass: text-1
   class: gallery-1
   number: 01

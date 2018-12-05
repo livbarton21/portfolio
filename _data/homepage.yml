@@ -1,26 +1,26 @@
 - image: images/home-1.jpg
-  aria-label:
+  aria-label: Daily Dose Salad
   textClass: text-1
   class: gallery-1
   number: 01
   heading: Daily Dose Branding
   pageUrl: daily
 - image: images/home-2.jpg
-  aria-label:
+  aria-label: Newfoundland Pub Tshirt
   textClass: text-2
   class: gallery-2
   number: 02
   heading: Newfoundland Pub Branding
   pageUrl: newf
 - image: images/home-3.jpg
-  aria-label:
+  aria-label: Tote Bag Designs
   textClass: text-3
   class: gallery-3
   number: 03
   heading: Tote Illustrations
   pageUrl: bag
 - image: images/home-4.jpg
-  aria-label:
+  aria-label: Bath Bomb Styling
   textClass: text-4
   class: gallery-4
   number: 04
